@@ -1,0 +1,44 @@
+mat-card {
+  opacity: .85;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+mat-form-field {
+  text-align: center;
+}
+
+input{
+  font-size: large;
+}
+
+input {
+  width: 80%;
+  height: 5vh;
+}
+
+/*validation*/
+
+/* .ng-valid[required], .ng-valid.required {color: #42A948;} */
+.error {color:#ff0000;}
+.success { color:green; }
+.contact-message { text-align: center; }
+
+.example-radio-button {
+  margin: 5%;
+}
+
+svg{
+  width: 5vw !important;
+}
+form{
+  font-family: 'Crimson Text', serif;
+  font-family: 'Chonburi', cursive;
+}
+
+#submit{
+  width: 100%;
+}

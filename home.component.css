@@ -1,0 +1,51 @@
+app-carousel {
+  position: fixed;
+  z-index: 0;
+  background-color: rgba(208, 235, 246, 0.524);
+}
+
+.container{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(208, 235, 246, 0.524);
+}
+
+::ng-deep button.mat-raised-button{
+  line-height: 25vh;
+  margin-top: 5vh;
+  width: 35vw;
+}
+
+svg{
+  width: 50%;
+}
+
+p{
+  line-height: 6vh;
+  font-size: 2vw;
+}
+
+h1{
+font-family: 'Cinzel', serif;
+color: rgb(176, 176, 176);
+font-size: 5vw;
+}
+
+#logoutButton{
+  font-size: 2vw;
+  margin-left: 2vw;
+  position: fixed;
+  z-index: 1;
+  line-height: 8vh;
+  width: 12%;
+}
+:hover #logoutButton{
+  box-shadow: 20px 20px 50px 20px white;
+}
+:hover #directoryButton{
+  box-shadow: 20px 20px 50px 20px white;
+}
+::ng-deep :hover #checkListButton{
+  box-shadow: 20px 20px 50px 20px white;
+}

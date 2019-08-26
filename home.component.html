@@ -1,0 +1,89 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<button mat-raised-button color="accent" id="logoutButton" type="button" (click) ="onLogout()" value="Logout">Sign Out</button>
+<div style="text-align:center">
+
+    <h1 class="col-8 offset-2">
+      {{ title }}
+    </h1>
+    <div id="checklistCont">
+
+    <button mat-raised-button id="checkListButton" (mouseenter) ="onHover()" (mouseover)="onHover()" color="primary" (click)= "toggleChecklist()" class="col-4 offset-1">
+      <div *ngIf= "hover">
+          <p>
+            Click HERE to
+            <br>
+            Complete Checklist
+          </p>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>Checkmark To Do List</title>
+          <desc>A line styled icon from Orion Icon Library.</desc>
+          <path data-name="layer2"
+          fill="none" stroke="#5a5a5a" stroke-miterlimit="10" stroke-width="2" d="M22 14.9h40m-40 18h40m-40 18h40"
+          stroke-linejoin="round" stroke-linecap="round"></path>
+          <path data-name="layer1" fill="none" stroke="#ffffff" stroke-miterlimit="10"
+          stroke-width="2" d="M2 14.9l4 4 4.8-7.9M2 32.9l4 4 4.8-7.9M2 50.9l4 4 4.8-8"
+          stroke-linejoin="round" stroke-linecap="round"></path>
+        </svg>
+    </button>
+
+  </div>
+  <div id="directoryCont">
+    <button id="directoryButton" mat-raised-button (mouseenter) ="onHoverD()" (mouseleave)="onHoverD()" color="basic" (click)= "toggleDirectory()" class="col-4 offset-1">
+      <div *ngIf= "hoverD">
+          <p>
+            Click HERE to see Directory
+          </p>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+      aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title>Contacts</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        fill="none" stroke="#42c5ce" stroke-miterlimit="10" stroke-width="2" d="M18 10h32"
+        stroke-linejoin="round" stroke-linecap="round"></path>
+        <path data-name="layer2" d="M54 2H18a8 8 0 0 0 0 16h36v44H18a8 8 0 0 1-8-8V10"
+        fill="none" stroke="#42c5ce" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round"></path>
+        <path data-name="layer1" d="M44.7 45.5c.6.4 1.5.9 1.3 2.1a6.2 6.2 0 0 1-5.9 4.4c-3.9 0-8.7-3.1-12.9-7.3S20 35.8 20 31.9a6.2 6.2 0 0 1 4.3-5.9c1.2-.2 1.7.7 2.1 1.3l3 4.5a2.1 2.1 0 0 1-.6 2.8c-1.3 1-2.5 1.4 2.3 6.2s5.1 3.5 6.2 2.3a2.1 2.1 0 0 1 2.8-.6z"
+        fill="none" stroke="#42c5ce" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round"></path>
+      </svg>
+
+    </button>
+  </div>
+
+  </div>
+  <app-directory *ngIf="showDirectory" class="col-8 offset-2"></app-directory>
+  <app-check-list-card *ngIf="showCheckList" class="col-8 offset-2"></app-check-list-card>
+  <!-- <table *ngIf= "userDetails" class="table-fill">
+    <thead>
+      <tr>
+        <th colspan="2" class="text-center">User Profile</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>First Name</td>
+        <td>{{userDetails.fullName.split(' ')[0]}}</td>
+      </tr>
+      <tr>
+        <td>Last Name</td>
+        <td>{{userDetails.fullName.split(' ')[1]}}</td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>{{userDetails.email}}</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="text-center">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+ -->
+
+
